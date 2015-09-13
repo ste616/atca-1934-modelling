@@ -182,8 +182,8 @@ int main(int argc, char *argv[]) {
   }
 
   /* cpgopen("11/xs"); */
-  /* cpgopen("1934-638_models.ps/cps"); */
-  cpgopen("1934-638_models.png/png");
+  cpgopen("1934-638_models.ps/cps");
+  /* cpgopen("1934-638_models.png/png"); */
   cpgqvp(0, &vpx1, &vpx2, &vpy1, &vpy2);
   vpy3 = vpy1 + (vpy2 - vpy1) / 5.0;
   /* cpgsvp(vpx1, vpx2, vpy3, vpy2); */
@@ -195,7 +195,7 @@ int main(int argc, char *argv[]) {
   cpgbox("BCLNTS",0,0,"BCLNTS",0,0);
   cpglab("Frequency (MHz)", "Flux Density (Jy)", "1934-638 Model Comparison");
   cpgsch(0.8);
-  /* cpgpt(n, x, y, 4); */
+  cpgpt(n, x, y, 4);
   /* cpgpt(nw, wx, wy, 4); */
   cpgsci(2);
   /* cpgpt(nr, rx, ry, 4); */
